@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "openx",
+    products: [
+        .executable(name: "openx", targets: ["openx"]),
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/kylef/Commander.git", from: "0.9.0"),
